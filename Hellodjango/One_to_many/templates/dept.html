@@ -1,0 +1,6 @@
+<h1>Dept_list</h1>
+<ul>
+    {% for dept in depts %}
+        <a href="/One_to_many/get_emp/?id={{ dept.id }}"><li>{{ dept.name }}</li></a>
+    {% endfor %}
+</ul>

@@ -1,0 +1,7 @@
+<h1>grades list</h1>
+<ul>
+    {% for grade in grades %}
+    <!-- <a href=""><li>{{ grade.name }}</li></a> -->
+    <li> <a href="/App/get_student/?id={{ grade.id }}">{{ grade.name }}</a> </li>
+    {% endfor %}
+</ul>
