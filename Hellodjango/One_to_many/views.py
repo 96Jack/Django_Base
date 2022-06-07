@@ -1,4 +1,4 @@
-
+ 
 from django.http import HttpResponse
 from django.shortcuts import render
 
@@ -43,7 +43,7 @@ def getDname(request):
     # return render(request, '', context=context)
     return HttpResponse('查询成功')
 
-
+#2. 给定主表数据，查询从表数据 eg: 查询开发部门的员工姓名
 def getEname(request):
     dept = Dept.objects.filter(name='开发部')[0]
     print(dir(dept))

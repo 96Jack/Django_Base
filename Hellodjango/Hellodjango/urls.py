@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', views.index),
     path('App/', include('App.urls')),
-    path('One_to_many/', include('One_to_many.urls'))
+    path('One_to_many/', include('One_to_many.urls')),
+    path('ModelFilter/', include('ModelFilter.urls')),
 
 ]

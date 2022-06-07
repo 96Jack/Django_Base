@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'App',
     'One_to_many',
+    'ModelFilter',
 ]
 
 MIDDLEWARE = [
@@ -81,7 +82,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'djtest',
-        'HOST': '10.0.4.2',
+        'HOST': 'localhost',
         'PORT': 3306,
         'USER': 'root',
         'PASSWORD': '123456'
